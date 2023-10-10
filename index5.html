@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LinePortfolio</title>
+<link rel="stylesheet" href="style5.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="script.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="preloader"></div>
+<script>
+     var abc=document.getElementById("preloader")
+     window.addEventListener("load", myfunction);
+     function myfunction(){abc.style.display="none";} 
+</script>
+<header>
+    <nav>
+       <ul>
+        <li><a href="index1.html"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="index2.html"><i class="material-icons">dashboard</i>About me</a></li>
+        <li><a href="index3.html"><i class="material-icons">verified</i>Achievements</a></li>
+        <li><a href="index4.html"><i class="material-icons">loyalty</i>Advice</a></li>
+        <li style="color:white;"><i class="material-icons">extension</i>Projects</li>
+    </ul>
+    </nav>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <h1>Click to enter a project</h1>
+    <div class="slideshow-container">
+    
+    
+    
+    <div class="mySlides fade">
+      <a href="https://lineimadghaith.github.io/BUDGET/"><img src="budget.png" style="width:100%"></a>
+      <div class="text">Budget checker<br>It helps you be aware of what you buy and get as an income; it simply keeps you on track with your financial state. </div>
+    </div>
+    
+    <div class="mySlides fade">
+      <a href="https://lineimadghaith.github.io/candyshop/"><img src="candy shop.png" style="width:100%"></a>
+      <div class="text">Candy shop!!<br>Order your favourite candy now for you and your loved ones!</div>
+    </div>
+    
+    <div class="mySlides fade">
+        <a href="https://lineimadghaith.github.io/calculator/"><img src="calculator.png" style="width:100%"></a>
+        <div class="text">A helpful functional calculator,<br> with a simple design.</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <a href="https://lineimadghaith.github.io/Grid/"><img src="grid of pixels.png" style="width:100%"></a>
+        <div class="text">Here is a project that I really enjoyed working on.<br>It contains a white grid that you can colour in any way you like to make a cute painting.</div>
+      </div>
+    
+    
+      <div class="mySlides fade">
+        <a href="https://lineimadghaith.github.io/test_ur-IQ/"><img src="test ur IQ.png" style="width:100%"></a>
+        <div class="text">What is better than having general knowledge? <br>This website contains questions in different domains.</div>
+      </div>
+    
+    
+      <div class="mySlides fade">
+        <a href="https://lineimadghaith.github.io/list/"><img src="to do list.png" style="width:100%"></a>
+        <div class="text">We all need a to-do list in our daily routine.<br>It helps to organise your work.</div>
+      </div>
+    
+    
+      <div class="mySlides fade">
+        <a href="https://lineimadghaith.github.io/valentinecard/"><img src="vantina.png" style="width:100%"></a>
+        <div class="text">Valentines Day!<br>A cute way to wish your lover a wonderful life and to show them how much you care about them.</div>
+      </div>
+        
+      <div class="mySlides fade">
+        <a href="https://lineimadghaith.github.io/Stop_Watch/"><img src="stopwatch.png" style="width:100%"></a>
+        <div class="text">Stop Watch<br>It is helpful most in sports exercises, group games, or even exams.</div>
+      </div>
+    
+    <a class="prev" onclick="plusSlides(-1)"> <    </a>
+    <a class="next" onclick="plusSlides(1)">    > </a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide(2)"></span> 
+      <span class="dot3" onclick="currentSlide(3)"></span> 
+      <span class="dot4" onclick="currentSlide(4)"></span> 
+      <span class="dot5" onclick="currentSlide(5)"></span> 
+      <span class="dot6" onclick="currentSlide(6)"></span> 
+      <span class="dot7" onclick="currentSlide(7)"></span> 
+      <span class="dot8" onclick="currentSlide(8)"></span> 
+      <span class="dot9" onclick="currentSlide(9)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dott");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+<footer>
+   <p style="font-size: 150%;color:white;">Contact Me</p>
+   <br><br>
+   <article>
+     <a class="footer" href="instagram.com/lineghaith/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+     <a class="footer" href="mailto:line.ghaith05@gmail.com"><i class="material-icons">mail</i></a>
+     <a class="footer" href="tel:70467229"><i class="fa fa-whatsapp" style="font-size:24px"></i></a>
+   </article>
+ </footer>
+
+</header>
